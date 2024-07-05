@@ -1,0 +1,44 @@
+go mod init <ruta>
+
+
+para traer o usar lambda:
+
+go get github.com/aws/aws-lambda-go/lambda
+
+luego en el import del main:
+
+import (
+	lambda "github.com/aws/aws-lambda-go/lambda"
+)
+
+
+estructura basica de lambda 
+
+package main
+
+import (
+	lambda "github.com/aws/aws-lambda-go/lambda"
+)
+
+func main(){
+
+	lambda.Start(EjecutoLambda)
+}
+
+func EjecutoLambda(){
+
+}
+
+
+luego llamar a eventos 
+
+go get github.com/aws/aws-lambda-go/events
+
+
+instalar sdk en el archivo awsgo.go 
+go get github.com/aws/aws-sdk-go-v2/aws
+
+y
+
+go get github.com/aws/aws-sdk-go-v2/config
+
