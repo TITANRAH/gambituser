@@ -42,3 +42,8 @@ y
 
 go get github.com/aws/aws-sdk-go-v2/config
 
+
+traer el driver de mysql 
+
+go get github.com/go-sql-driver/mysql
+
